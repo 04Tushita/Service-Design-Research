@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Design Research • Frame</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-logo-box">SD</div>
+        <a href="../index.html" class="brand-name">Service Design Research</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../research/index.html" class="nav-link">Research</a></li>
+          <li><a href="index.html" class="nav-link active">Frame</a></li>
+          <li><a href="../maps/index.html" class="nav-link">Maps</a></li>
+          <li><a href="../solution/index.html" class="nav-link">Solution</a></li>
+          <li><a href="../process/index.html" class="nav-link">Process</a></li>
+          <li><a href="../reflection/index.html" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Page Header -->
+    <section class="page-header-section">
+      <nav class="breadcrumb-nav">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Frame</span>
+        <span>/</span>
+        <span>Problem Definition</span>
+      </nav>
+      <h1 class="page-title">Framing the Opportunity: Archetype, POV & HMW</h1>
+      <p class="page-desc">
+        Synthesizing qualitative user evidence into targeted design challenges, human-centered points of view, and generative opportunity spaces.
+      </p>
+    </section>
+
+    <!-- Section 1: Archetype & User Story (2-col grid) -->
+    <section class="content-grid-2col">
+      <!-- Persona Card -->
+      <article class="content-card">
+        <span class="badge">Persona Deep-Dive</span>
+        <div class="wireframe-box" style="height: 140px; margin: 12px 0;">
+          <span class="box-label">Archetype Persona Wireframe</span>
+        </div>
+        <h2 class="content-card-title">The Overwhelmed Service Coordinator</h2>
+        <p class="content-card-body">
+          Responsible for multi-stakeholder service alignment. Pressured by client expectations and paralyzed by non-transparent departmental review queues.
+        </p>
+        <ul style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px; display: flex; flex-direction: column; gap: 4px; padding-left: 18px; list-style: disc;">
+          <li><strong>Goal:</strong> Zero-latency handoffs and automated milestone visibility.</li>
+          <li><strong>Friction:</strong> Manual email status chasing across disconnected silos.</li>
+        </ul>
+      </article>
+
+      <!-- User Story & Context -->
+      <article class="content-card">
+        <span class="badge">Core User Story</span>
+        <h2 class="content-card-title" style="margin-top: 12px;">As an operational coordinator...</h2>
+        <p class="content-card-body">
+          <strong>"I want</strong> a centralized, real-time dashboard tracking intake milestones and assigned review owners,<br><br>
+          <strong>So that</strong> I can proactively identify departmental bottlenecks before client deadlines are compromised and avoid manual email check-ins."
+        </p>
+        <div class="wireframe-box" style="height: 120px; margin-top: auto;">
+          <span class="box-label">User Story Narrative Illustration</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 2: POV Statement -->
+    <section style="margin-bottom: var(--spacing-xl);">
+      <div class="content-card" style="border-left: 4px solid var(--border-dark); background: var(--bg-surface);">
+        <span class="badge" style="width: fit-content;">Point of View (POV) Formulation</span>
+        <h2 style="font-size: 1.15rem; font-weight: 700; margin: 8px 0; color: var(--text-primary);">
+          User + Need + Insight
+        </h2>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+          <strong>User:</strong> Mid-level institutional service coordinators<br>
+          <strong>Need:</strong> A transparent, self-validating intake handoff mechanism<br>
+          <strong>Insight:</strong> Because silence from internal gatekeepers produces acute anxiety and forces defensive manual spreadsheet duplication that consumes over 35% of their working week.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: How Might We (HMW) Questions (3-col grid) -->
+    <section>
+      <div class="section-heading-wrapper">
+        <h2 class="section-title">Generative How Might We (HMW) Questions</h2>
+        <p class="section-subtitle">Translating user tensions into creative springboards for system design.</p>
+      </div>
+
+      <div class="content-grid-3col">
+        <article class="content-card">
+          <span class="badge">HMW 01 • Visibility</span>
+          <h3 class="content-card-title">Demystify Review Queues</h3>
+          <p class="content-card-body">
+            How might we provide immediate, automated visibility into queue status so coordinators never need to send a manual status check?
+          </p>
+        </article>
+
+        <article class="content-card">
+          <span class="badge">HMW 02 • Autonomy</span>
+          <h3 class="content-card-title">Front-load Verification</h3>
+          <p class="content-card-body">
+            How might we enable users to self-validate submission dependencies upfront before sending the dossier to internal audit teams?
+          </p>
+        </article>
+
+        <article class="content-card">
+          <span class="badge">HMW 03 • Handoffs</span>
+          <h3 class="content-card-title">Eliminate Diffusion of Duty</h3>
+          <p class="content-card-body">
+            How might we establish clear singular accountability for inter-departmental transfers with automated escalation timers?
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Step Navigation -->
+    <div class="step-navigation">
+      <a href="../research/index.html" class="btn btn-secondary">← Previous: Research Findings</a>
+      <a href="../maps/index.html" class="btn btn-primary">Next: Interactive Maps →</a>
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>Team / Course: Service Design Lab</span>
+        <span>•</span>
+        <span>Contact: <a href="mailto:tushitakaul04@gmail.com" class="footer-link">tushitakaul04@gmail.com</a></span>
+      </div>
+      <div>
+        <a href="#top" class="back-to-top-btn">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Design Research • Findings</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-logo-box">SD</div>
+        <a href="../index.html" class="brand-name">Service Design Research</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html" class="nav-link active">Research</a></li>
+          <li><a href="../frame/index.html" class="nav-link">Frame</a></li>
+          <li><a href="../maps/index.html" class="nav-link">Maps</a></li>
+          <li><a href="../solution/index.html" class="nav-link">Solution</a></li>
+          <li><a href="../process/index.html" class="nav-link">Process</a></li>
+          <li><a href="../reflection/index.html" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Page Header -->
+    <section class="page-header-section">
+      <nav class="breadcrumb-nav">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Research</span>
+        <span>/</span>
+        <span>Findings</span>
+      </nav>
+      <h1 class="page-title">Research Findings & Synthesized Insights</h1>
+      <p class="page-desc">
+        Interview insights as filterable cards. Filter by interviewee or theme to reveal recurring pain points and systemic operational barriers.
+      </p>
+    </section>
+
+    <!-- Research Layout: 2 Columns (Filterable Grid + Sticky Archetype) -->
+    <div class="research-layout">
+      <!-- Left Column: Filter Chips & Insight Cards -->
+      <section class="insights-main-column">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <div class="filter-chips">
+            <button class="chip-btn active" data-filter="all">All (6)</button>
+            <button class="chip-btn" data-filter="int-1">Interview 1</button>
+            <button class="chip-btn" data-filter="int-2">Interview 2</button>
+            <button class="chip-btn" data-filter="int-3">Interview 3</button>
+            <button class="chip-btn" data-filter="int-4">Interview 4</button>
+            <button class="chip-btn" data-filter="pain">Theme: Pain points</button>
+          </div>
+          <span class="filter-secondary-action">Click a card to expand transcript</span>
+        </div>
+
+        <!-- Insights Grid (3x2 on desktop) -->
+        <div class="insights-grid">
+          <!-- Card 1 -->
+          <article class="insight-card" data-interview="1" data-theme="pain" data-excerpt="The participant highlighted a persistent lag between initial registration and document requirements. They sent three follow-up emails over 12 days before receiving a definitive checklist. This initial disorientation created deep mistrust in the rest of the service onboarding process.">
+            <div class="insight-card-header">
+              <span class="insight-card-theme">Onboarding</span>
+              <span class="insight-card-source">Interview 1</span>
+            </div>
+            <h3 class="insight-card-title">Information Asymmetry at Initial Intake</h3>
+            <blockquote class="insight-card-quote">
+              "I had no idea what documents were actually needed until the third email exchange two weeks later."
+            </blockquote>
+            <p class="step-card-desc">Users feel blindfolded during initial document prep, causing compounding delays.</p>
+            <div class="insight-card-footer">
+              <span>View full quote & transcript</span>
+              <span>→</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="insight-card" data-interview="2" data-theme="pain" data-excerpt="Participant 2 reported that multi-departmental reviews operate as isolated black boxes. Team leads are unable to provide clients with even rough time estimates, forcing manual calendar tracking and stress.">
+            <div class="insight-card-header">
+              <span class="insight-card-theme">Communication</span>
+              <span class="insight-card-source">Interview 2</span>
+            </div>
+            <h3 class="insight-card-title">The 'Black Box' Queue Silence</h3>
+            <blockquote class="insight-card-quote">
+              "Once you hit submit, you are completely left in the dark waiting for approval without any timeline."
+            </blockquote>
+            <p class="step-card-desc">Absence of automated progress feedback generates high inbound support anxiety.</p>
+            <div class="insight-card-footer">
+              <span>View full quote & transcript</span>
+              <span>→</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="insight-card" data-interview="3" data-theme="pain" data-excerpt="Participant 3 must navigate three completely distinct internal portals to confirm a single project status. High context-switching penalties lead to data discrepancies and missed deadlines.">
+            <div class="insight-card-header">
+              <span class="insight-card-theme">Workflow</span>
+              <span class="insight-card-source">Interview 3</span>
+            </div>
+            <h3 class="insight-card-title">Tool Fragmentation & Cognitive Overload</h3>
+            <blockquote class="insight-card-quote">
+              "We have to juggle between three separate portals just to verify that one person signed off."
+            </blockquote>
+            <p class="step-card-desc">Fragmented software ecosystems force manual double-entry across disparate tools.</p>
+            <div class="insight-card-footer">
+              <span>View full quote & transcript</span>
+              <span>→</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="insight-card" data-interview="4" data-theme="pain" data-excerpt="Participant 4 felt blindsided by unannounced processing fees at the final stage. The lack of upfront fee transparency caused project budget freezes and required secondary managerial escalation.">
+            <div class="insight-card-header">
+              <span class="insight-card-theme">Transparency</span>
+              <span class="insight-card-source">Interview 4</span>
+            </div>
+            <h3 class="insight-card-title">Hidden Gatekeepers & Late-Stage Costs</h3>
+            <blockquote class="insight-card-quote">
+              "The surprise processing requirement at the 11th hour broke our entire quarterly budget."
+            </blockquote>
+            <p class="step-card-desc">Unannounced dependencies late in the journey cause frustration and project stalls.</p>
+            <div class="insight-card-footer">
+              <span>View full quote & transcript</span>
+              <span>→</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="insight-card" data-interview="1" data-theme="workflow" data-excerpt="When escalation is necessary, generic support chatbots create an endless loop of unhelpful knowledge base links rather than routing to a human case owner who understands the regulatory context.">
+            <div class="insight-card-header">
+              <span class="insight-card-theme">Support</span>
+              <span class="insight-card-source">Interview 1</span>
+            </div>
+            <h3 class="insight-card-title">Automated Deflection Loops</h3>
+            <blockquote class="insight-card-quote">
+              "The bot kept linking me to generic FAQ pages that had zero relevance to my specific case."
+            </blockquote>
+            <p class="step-card-desc">Customer service deflection scripts fail when users have nuanced institutional queries.</p>
+            <div class="insight-card-footer">
+              <span>View full quote & transcript</span>
+              <span>→</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="insight-card" data-interview="3" data-theme="workflow" data-excerpt="Department handoffs lack clear operational ownership. When an issue occurs between review and provisioning, neither department takes responsibility for resolution.">
+            <div class="insight-card-header">
+              <span class="insight-card-theme">Accountability</span>
+              <span class="insight-card-source">Interview 3</span>
+            </div>
+            <h3 class="insight-card-title">Diffusion of Responsibility in Handoffs</h3>
+            <blockquote class="insight-card-quote">
+              "Department A claimed Department B was holding it, but B had never even received the dossier."
+            </blockquote>
+            <p class="step-card-desc">Inter-departmental friction points lack a unified tracking system or accountable owner.</p>
+            <div class="insight-card-footer">
+              <span>View full quote & transcript</span>
+              <span>→</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Right Column: Sticky Archetype Card -->
+      <aside class="sticky-archetype">
+        <div class="archetype-label">Target Persona Archetype</div>
+        <div class="wireframe-box archetype-avatar">
+          <span class="box-label">Archetype Avatar</span>
+        </div>
+        <h3 class="archetype-name">The Overwhelmed Service Coordinator</h3>
+        <p class="archetype-desc">
+          Mid-level operational lead responsible for client service delivery. Balances tight stakeholder deadlines against rigid, uncommunicative internal review siloes.
+        </p>
+
+        <div class="archetype-stats">
+          <div class="archetype-stat-row">
+            <span>Primary Goal:</span>
+            <strong>Predictable Delivery</strong>
+          </div>
+          <div class="archetype-stat-row">
+            <span>Main Frustration:</span>
+            <strong>Black-Box Delays</strong>
+          </div>
+          <div class="archetype-stat-row">
+            <span>Current Workaround:</span>
+            <strong>Manual Spreadsheets</strong>
+          </div>
+        </div>
+
+        <a href="../frame/index.html" class="btn btn-primary" style="width: 100%;">
+          See POV & HMW →
+        </a>
+      </aside>
+    </div>
+
+    <!-- Step Navigation -->
+    <div class="step-navigation">
+      <a href="../index.html" class="btn btn-secondary">← Previous: Home</a>
+      <a href="../frame/index.html" class="btn btn-primary">Next: Frame Opportunity →</a>
+    </div>
+  </main>
+
+  <!-- Modal for Transcript Excerpts -->
+  <div class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Interview Excerpt</h3>
+        <button class="modal-close-btn" aria-label="Close modal">×</button>
+      </div>
+      <blockquote class="modal-quote-block"></blockquote>
+      <div class="modal-body">
+        <p class="modal-body-text"></p>
+      </div>
+      <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+        <button class="btn btn-secondary modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>Team / Course: Service Design Lab</span>
+        <span>•</span>
+        <span>Contact: <a href="mailto:tushitakaul04@gmail.com" class="footer-link">tushitakaul04@gmail.com</a></span>
+      </div>
+      <div>
+        <a href="#top" class="back-to-top-btn">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/research.js"></script>
+</body>
+</html>

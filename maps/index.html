@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Design Research • Maps</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-logo-box">SD</div>
+        <a href="../index.html" class="brand-name">Service Design Research</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../research/index.html" class="nav-link">Research</a></li>
+          <li><a href="../frame/index.html" class="nav-link">Frame</a></li>
+          <li><a href="index.html" class="nav-link active">Maps</a></li>
+          <li><a href="../solution/index.html" class="nav-link">Solution</a></li>
+          <li><a href="../process/index.html" class="nav-link">Process</a></li>
+          <li><a href="../reflection/index.html" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Page Header -->
+    <section class="page-header-section">
+      <nav class="breadcrumb-nav">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Maps</span>
+        <span>/</span>
+        <span class="breadcrumb-sub">Journey map</span>
+      </nav>
+      <h1 class="page-title">Interactive Service Architecture & Journey Maps</h1>
+      <p class="page-desc">
+        Explore systemic relationships, task pathways, and end-to-end emotional touchpoints. Select nodes along the journey to inspect underlying pains, gains, and interview evidence.
+      </p>
+    </section>
+
+    <!-- Maps Layout -->
+    <section class="maps-layout">
+      <!-- Controls Bar: Tabs & Action Buttons -->
+      <div class="maps-controls-bar">
+        <div class="maps-tabs">
+          <button class="map-tab-btn" data-map="mindmap">Mind map</button>
+          <button class="map-tab-btn" data-map="userflow">User flow</button>
+          <button class="map-tab-btn active" data-map="journeymap">Journey map</button>
+        </div>
+
+        <div class="maps-actions">
+          <button class="btn btn-secondary btn-sm trace-interviewees-btn">Trace interviewees</button>
+          <button class="btn btn-secondary btn-sm zoom-fit-btn">Reset</button>
+        </div>
+      </div>
+
+      <!-- Workspace Grid: Canvas + Detail Panel -->
+      <div class="maps-workspace-grid">
+        <!-- Interactive Map Canvas -->
+        <div class="map-canvas-container">
+          <!-- Canvas Header & Phase Progress Bar -->
+          <div class="map-canvas-header">
+            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-secondary);">
+              Journey Phases: Select Node
+            </span>
+            <div class="map-phase-tracker">
+              <button class="phase-node active" data-phase="1" title="Phase 1: Initial Trigger">1</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="2" title="Phase 2: Information Gathering">2</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="3" title="Phase 3: Intake Submission">3</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="4" title="Phase 4: Internal Audit">4</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="5" title="Phase 5: Stakeholder Signoff">5</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="6" title="Phase 6: Service Activation">6</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="7" title="Phase 7: Maintenance & Support">7</button>
+              <div class="phase-line"></div>
+              <button class="phase-node" data-phase="8" title="Phase 8: Renewal & Review">8</button>
+            </div>
+          </div>
+
+          <!-- Canvas Viewport -->
+          <div class="map-canvas-viewport">
+            <div class="map-canvas-placeholder-card">
+              <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 6px;">
+                CANVAS VIEWPORT • PAN / ZOOM • CLICK A NODE ABOVE
+              </div>
+              <h2 class="map-viewport-title" style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">
+                End-to-End Service Journey Map
+              </h2>
+              <p class="map-viewport-subtitle" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">
+                Chronological narrative mapping touchpoints, emotional cadence, and friction moments across 8 distinct phases.
+              </p>
+              <div class="wireframe-box" style="height: 160px; width: 100%;">
+                <span class="box-label">Interactive Map Canvas • Pan / Zoom • Hover / Click Node</span>
+              </div>
+            </div>
+
+            <!-- Canvas Bottom-Left Toolbar -->
+            <div class="map-toolbar">
+              <button class="toolbar-btn zoom-in-btn" title="Zoom in">+</button>
+              <button class="toolbar-btn zoom-out-btn" title="Zoom out">−</button>
+              <button class="toolbar-btn zoom-fit-btn" title="Fit to screen">Fit</button>
+              <span class="zoom-indicator" style="font-size: 0.7rem; font-family: var(--font-mono); padding: 4px 6px; color: var(--text-muted); display: flex; align-items: center;">
+                100%
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Panel (Right) -->
+        <aside class="map-detail-panel">
+          <div>
+            <span class="detail-stage-tag">PHASE 01</span>
+            <h2 class="detail-stage-name">Initial Trigger & Discovery</h2>
+          </div>
+
+          <p class="detail-stage-summary">
+            Stakeholder identifies service requirement or regulatory compliance threshold. First interaction with organizational discovery channels.
+          </p>
+
+          <div>
+            <h3 class="detail-section-title">Pains</h3>
+            <ul class="detail-list detail-pains-list">
+              <li>Ambiguous guidelines on eligibility prerequisites</li>
+              <li>Difficulty finding primary point-of-contact</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="detail-section-title">Gains</h3>
+            <ul class="detail-list detail-gains-list">
+              <li>Clear central landing documentation</li>
+              <li>Immediate self-assessment checklist</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="detail-section-title">Evidence & Traceability</h3>
+            <div class="evidence-tags">
+              <button class="evidence-chip">Interview 1</button>
+              <button class="evidence-chip">Interview 3</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Step Navigation (Bottom) -->
+      <div class="step-navigation">
+        <a href="../frame/index.html" class="btn btn-secondary">← Previous: Frame</a>
+        <a href="../solution/index.html" class="btn btn-primary">Next: Solution Flows →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>Team / Course: Service Design Lab</span>
+        <span>•</span>
+        <span>Contact: <a href="mailto:tushitakaul04@gmail.com" class="footer-link">tushitakaul04@gmail.com</a></span>
+      </div>
+      <div>
+        <a href="#top" class="back-to-top-btn">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/maps.js"></script>
+</body>
+</html>

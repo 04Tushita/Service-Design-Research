@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Design Research • Solution</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-logo-box">SD</div>
+        <a href="../index.html" class="brand-name">Service Design Research</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../research/index.html" class="nav-link">Research</a></li>
+          <li><a href="../frame/index.html" class="nav-link">Frame</a></li>
+          <li><a href="../maps/index.html" class="nav-link">Maps</a></li>
+          <li><a href="index.html" class="nav-link active">Solution</a></li>
+          <li><a href="../process/index.html" class="nav-link">Process</a></li>
+          <li><a href="../reflection/index.html" class="nav-link">Reflection</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Page Header -->
+    <section class="page-header-section">
+      <nav class="breadcrumb-nav">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <span>Solution</span>
+        <span>/</span>
+        <span class="solution-breadcrumb-sub">Wireframe Flows</span>
+      </nav>
+      <h1 class="page-title">Solution Wireframe Concepts: Flow A vs. Flow B</h1>
+      <p class="page-desc">
+        Two low-fidelity conceptual service interventions tested with users to resolve handoff latency and queue opacity.
+      </p>
+    </section>
+
+    <!-- Solution Viewer Component -->
+    <section style="margin: var(--spacing-xl) 0;">
+      <div class="flow-viewer">
+        <!-- Flow Tabs -->
+        <div class="flow-tabs-bar">
+          <button class="flow-tab-btn active" id="tabFlowA">Flow A: Unified Service Hub</button>
+          <button class="flow-tab-btn" id="tabFlowB">Flow B: Guided Milestone Onboarding</button>
+        </div>
+
+        <!-- Flow Content: Screens Grid -->
+        <div class="flow-stage-screens" id="flowScreensContainer">
+          <!-- Screen 1 -->
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame">
+              <span class="box-label">Screen 1 • Dashboard Overview</span>
+            </div>
+            <h3 class="screen-label">1. Intake Status Feed</h3>
+            <p class="screen-caption">
+              Consolidated real-time status card showing queue position, reviewer SLA, and pending dependencies.
+            </p>
+          </div>
+
+          <!-- Screen 2 -->
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame">
+              <span class="box-label">Screen 2 • Self-Audit Modal</span>
+            </div>
+            <h3 class="screen-label">2. Pre-Flight Validator</h3>
+            <p class="screen-caption">
+              Automated document checking tool that warns coordinators of missing regulatory fields prior to submission.
+            </p>
+          </div>
+
+          <!-- Screen 3 -->
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame">
+              <span class="box-label">Screen 3 • Escalation Bridge</span>
+            </div>
+            <h3 class="screen-label">3. 1-Click Department Escalation</h3>
+            <p class="screen-caption">
+              Direct communication link to assigned department lead with automated response countdown.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concept Evaluation Comparison -->
+    <section>
+      <div class="section-heading-wrapper">
+        <h2 class="section-title">Concept Evaluation & User Feedback</h2>
+        <p class="section-subtitle">Key takeaways gathered during participant walkthrough sessions.</p>
+      </div>
+
+      <div class="content-grid-2col">
+        <article class="content-card">
+          <span class="badge">Concept Flow A</span>
+          <h3 class="content-card-title">Unified Hub: High Efficiency</h3>
+          <p class="content-card-body">
+            Users appreciated seeing all active requests in a single view. Reduced daily status check time by an estimated 65%. Preferred by high-volume administrative coordinators.
+          </p>
+        </article>
+
+        <article class="content-card">
+          <span class="badge">Concept Flow B</span>
+          <h3 class="content-card-title">Milestone Stepper: High Clarity</h3>
+          <p class="content-card-body">
+            Linear progressive disclosure eliminated cognitive overload for first-time applicants. Greatly reduced initial document error rates.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Step Navigation -->
+    <div class="step-navigation">
+      <a href="../maps/index.html" class="btn btn-secondary">← Previous: Maps</a>
+      <a href="../process/index.html" class="btn btn-primary">Next: Research Process →</a>
+    </div>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>Team / Course: Service Design Lab</span>
+        <span>•</span>
+        <span>Contact: <a href="mailto:tushitakaul04@gmail.com" class="footer-link">tushitakaul04@gmail.com</a></span>
+      </div>
+      <div>
+        <a href="#top" class="back-to-top-btn">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Tab switching for Flow A / Flow B
+    const tabA = document.getElementById('tabFlowA');
+    const tabB = document.getElementById('tabFlowB');
+    const screens = document.getElementById('flowScreensContainer');
+
+    if (tabA && tabB && screens) {
+      tabA.addEventListener('click', () => {
+        tabA.classList.add('active');
+        tabB.classList.remove('active');
+        screens.innerHTML = `
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame"><span class="box-label">Flow A: Screen 1 • Central Dashboard</span></div>
+            <h3 class="screen-label">1. Intake Status Feed</h3>
+            <p class="screen-caption">Consolidated real-time status card showing queue position, reviewer SLA, and pending dependencies.</p>
+          </div>
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame"><span class="box-label">Flow A: Screen 2 • Pre-flight Validator</span></div>
+            <h3 class="screen-label">2. Pre-Flight Validator</h3>
+            <p class="screen-caption">Automated document checking tool that warns coordinators of missing fields prior to submission.</p>
+          </div>
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame"><span class="box-label">Flow A: Screen 3 • Escalation Channel</span></div>
+            <h3 class="screen-label">3. 1-Click Department Escalation</h3>
+            <p class="screen-caption">Direct communication link to assigned department lead with automated response countdown.</p>
+          </div>
+        `;
+      });
+
+      tabB.addEventListener('click', () => {
+        tabB.classList.add('active');
+        tabA.classList.remove('active');
+        screens.innerHTML = `
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame"><span class="box-label">Flow B: Screen 1 • Wizard Step 1</span></div>
+            <h3 class="screen-label">1. Guided Scope Diagnostic</h3>
+            <p class="screen-caption">Interactive questionnaire narrowing down service requirements based on applicant profile.</p>
+          </div>
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame"><span class="box-label">Flow B: Screen 2 • Live Milestone Checklist</span></div>
+            <h3 class="screen-label">2. Step-by-Step Document Handoff</h3>
+            <p class="screen-caption">Color-coded milestone progress bar indicating exact department holding each artifact.</p>
+          </div>
+          <div class="screen-card">
+            <div class="wireframe-box screen-frame"><span class="box-label">Flow B: Screen 3 • Confirmation Receipt</span></div>
+            <h3 class="screen-label">3. Verified Delivery Receipt</h3>
+            <p class="screen-caption">Downloadable proof of submission with transparent review timeframe commitments.</p>
+          </div>
+        `;
+      });
+    }
+  </script>
+</body>
+</html>
